@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="146dp"
+    android:height="146dp"
+    android:viewportWidth="146"
+    android:viewportHeight="146">
+    
+    <!-- Blue glow effect around tall battery -->
+    <path
+        android:pathData="M25,20 Q25,0 45,0 L101,0 Q121,0 121,20 L121,141 Q121,151 101,151 L45,151 Q25,151 25,141 Z"
+        android:fillColor="#2196F3"
+        android:fillAlpha="0.4" />
+    
+    <!-- Inner blue glow -->
+    <path
+        android:pathData="M28,18 Q28,3 43,3 L103,3 Q118,3 118,18 L118,141 Q118,148 103,148 L43,148 Q28,148 28,141 Z"
+        android:fillColor="#64B5F6"
+        android:fillAlpha="0.6" />
+    
+    <!-- Terminal glow -->
+    <path
+        android:pathData="M55,5 L91,5 Q96,5 96,0 L96,-5 Q96,-10 91,-10 L55,-10 Q50,-10 50,-5 L50,0 Q50,5 55,5"
+        android:fillColor="#2196F3"
+        android:fillAlpha="0.5" />
+</vector>

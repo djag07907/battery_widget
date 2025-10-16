@@ -3,34 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="false"
-    android:focusable="false"
-    android:padding="4dp">
+    android:focusable="false">
 
-    <!-- Battery Background (Vertical Cylindrical Cell) -->
+    <!-- Battery Background (Tall Vertical Cell) -->
     <ImageView
         android:id="@+id/battery_background"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:src="@drawable/vertical_cell_battery_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tall_cell_battery_background"
         android:scaleType="fitXY" />
 
     <!-- Battery Level Fill -->
     <ImageView
         android:id="@+id/battery_fill"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:src="@drawable/vertical_cell_battery_fill_high"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tall_cell_battery_fill_high"
         android:scaleType="fitXY" />
     
     <!-- Charging Glow Effect -->
     <ImageView
         android:id="@+id/charging_glow"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_gravity="center"
-        android:src="@drawable/vertical_cell_battery_glow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tall_cell_battery_glow"
         android:scaleType="fitXY"
         android:alpha="0.0"
         android:visibility="gone" />

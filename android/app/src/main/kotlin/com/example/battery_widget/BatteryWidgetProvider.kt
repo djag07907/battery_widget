@@ -47,24 +47,24 @@ class BatteryWidgetProvider : AppWidgetProvider() {
             val batteryFill: Int
             when {
                 batteryInfo.isCharging -> {
-                    batteryFill = R.drawable.vertical_cell_battery_fill_charging
+                    batteryFill = R.drawable.tall_cell_battery_fill_charging
                     views.setViewVisibility(R.id.charging_indicator, android.view.View.VISIBLE)
                     views.setViewVisibility(R.id.charging_glow, android.view.View.VISIBLE)
                     // Create blue glow effect by setting alpha
-                    views.setFloat(R.id.charging_glow, "setAlpha", 0.8f)
+                    views.setFloat(R.id.charging_glow, "setAlpha", 0.9f)
                 }
                 batteryInfo.level <= 30 -> {
-                    batteryFill = R.drawable.vertical_cell_battery_fill_low
+                    batteryFill = R.drawable.tall_cell_battery_fill_low
                     views.setViewVisibility(R.id.charging_indicator, android.view.View.GONE)
                     views.setViewVisibility(R.id.charging_glow, android.view.View.GONE)
                 }
                 batteryInfo.level <= 60 -> {
-                    batteryFill = R.drawable.vertical_cell_battery_fill_medium
+                    batteryFill = R.drawable.tall_cell_battery_fill_medium
                     views.setViewVisibility(R.id.charging_indicator, android.view.View.GONE)
                     views.setViewVisibility(R.id.charging_glow, android.view.View.GONE)
                 }
                 else -> {
-                    batteryFill = R.drawable.vertical_cell_battery_fill_high
+                    batteryFill = R.drawable.tall_cell_battery_fill_high
                     views.setViewVisibility(R.id.charging_indicator, android.view.View.GONE)
                     views.setViewVisibility(R.id.charging_glow, android.view.View.GONE)
                 }

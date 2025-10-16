@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="146dp"
+    android:height="146dp"
+    android:viewportWidth="146"
+    android:viewportHeight="146">
+    
+    <!-- Low battery fill (15% from bottom - red) -->
+    <path
+        android:pathData="M34,120 Q34,118 36,118 L110,118 Q112,118 112,120 L112,141 Q112,143 110,143 L36,143 Q34,143 34,141 Z"
+        android:fillColor="@color/low_battery_color" />
+</vector>

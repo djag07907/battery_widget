@@ -11,16 +11,26 @@ class BatteryReceiver : BroadcastReceiver() {
         when (intent.action) {
             Intent.ACTION_POWER_CONNECTED,
             Intent.ACTION_POWER_DISCONNECTED,
-            Intent.ACTION_BATTERY_CHANGED -> {
+            Intent.ACTION_BATTERY_CHANGED,
+            Intent.ACTION_BATTERY_LOW,
+            Intent.ACTION_BATTERY_OKAY -> {
                 // Immediately update all widgets when power state changes
-                val appWidgetManager = AppWidgetManager.getInstance(context)
-                val thisWidget = ComponentName(context, BatteryWidgetProvider::class.java)
-                val allWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget)
-                
-                for (widgetId in allWidgetIds) {
-                    BatteryWidgetProvider.updateAppWidget(context, appWidgetManager, widgetId)
-                }
+                updateAllWidgets(context)
             }
+        }
+    }
+    
+    private fun updateAllWidgets(context: Context) {
+        try {
+            val appWidgetManager = AppWidgetManager.getInstance(context)
+            val thisWidget = ComponentName(context, BatteryWidgetProvider::class.java)
+            val allWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget)
+            
+            for (widgetId in allWidgetIds) {
+                BatteryWidgetProvider.updateAppWidget(context, appWidgetManager, widgetId)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
     }
 }
