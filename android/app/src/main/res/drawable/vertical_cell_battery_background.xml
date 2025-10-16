@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="130dp"
+    android:height="130dp"
+    android:viewportWidth="130"
+    android:viewportHeight="130">
+    
+    <!-- Vertical cell battery body (cylindrical shape) -->
+    <path
+        android:pathData="M25,20 Q25,15 30,15 L100,15 Q105,15 105,20 L105,100 Q105,105 100,105 L30,105 Q25,105 25,100 Z"
+        android:strokeColor="#424242"
+        android:strokeWidth="4"
+        android:fillColor="@android:color/transparent" />
+    
+    <!-- Positive terminal (button on top) -->
+    <path
+        android:pathData="M45,15 L85,15 Q90,15 90,10 L90,5 Q90,0 85,0 L45,0 Q40,0 40,5 L40,10 Q40,15 45,15"
+        android:strokeColor="#424242"
+        android:strokeWidth="4"
+        android:fillColor="@android:color/transparent" />
+    
+    <!-- Plus marking (top) -->
+    <path
+        android:pathData="M55,25 L75,25 M65,20 L65,30"
+        android:strokeColor="#424242"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+        
+    <!-- Minus marking (bottom) -->
+    <path
+        android:pathData="M55,95 L75,95"
+        android:strokeColor="#424242"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+</vector>

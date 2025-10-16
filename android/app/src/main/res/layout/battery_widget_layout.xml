@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:padding="4dp">
+
+    <!-- Battery Background (Vertical Cylindrical Cell) -->
+    <ImageView
+        android:id="@+id/battery_background"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/vertical_cell_battery_background"
+        android:scaleType="fitXY" />
+
+    <!-- Battery Level Fill -->
+    <ImageView
+        android:id="@+id/battery_fill"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/vertical_cell_battery_fill_high"
+        android:scaleType="fitXY" />
+    
+    <!-- Charging Glow Effect -->
+    <ImageView
+        android:id="@+id/charging_glow"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:src="@drawable/vertical_cell_battery_glow"
+        android:scaleType="fitXY"
+        android:alpha="0.0"
+        android:visibility="gone" />
+
+    <!-- Battery Percentage Text -->
+    <TextView
+        android:id="@+id/battery_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="100%"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <!-- Charging Indicator (Lightning bolt) -->
+    <ImageView
+        android:id="@+id/charging_indicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_charging_bolt_big"
+        android:visibility="gone" />
+
+</FrameLayout>

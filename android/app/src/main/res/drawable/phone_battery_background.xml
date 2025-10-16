@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Phone battery outline (vertical rectangle) -->
+    <path
+        android:pathData="M30,20 L90,20 L90,15 L95,15 L95,25 L90,25 L90,100 L30,100 Z"
+        android:strokeColor="#424242"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+</vector>
